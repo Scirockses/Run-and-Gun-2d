@@ -16,7 +16,7 @@ public class Main {
 		Frame.setLayout(new BorderLayout());
 		Frame.add(new GamePanel(), BorderLayout.CENTER);
 		Frame.pack();
-		Frame.setLocationRelativeTo(null);
+		Frame.setLocation(0,0);
 		Frame.setVisible(true);
 		Frame.setSize(WIDTH,HEIGHT);
 	}

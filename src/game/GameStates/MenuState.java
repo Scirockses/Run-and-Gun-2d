@@ -28,10 +28,15 @@ public class MenuState extends GameState {
 				g.setColor(Color.black);
 			}
 			g.setFont(new Font("Arial", Font.PLAIN,72));
+			 int e = 100;
+			 if (i == 1){
+			 e = 150;
+			 }
+
 			g.drawString(Options[i], Main.WIDTH / 2 - e,  i * 150 + Main.HEIGHT / 3);
 		}
 	}
-
+	
 	
 	public void keypressed(int k) {
 		
