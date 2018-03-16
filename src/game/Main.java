@@ -5,6 +5,12 @@ public class Main {
 	private int FPS = 60;
 	private long Targettime = 1000/FPS;
 	
+	public static void main(String[] args){
+	
+		Screen screen = new Screen();
+		
+	}
+	
 	
 	public void Start(){
 		isrunning = true;
