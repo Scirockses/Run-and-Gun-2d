@@ -1,6 +1,6 @@
 package game;
 
-public class Screen {
+public class Screen extends JFrame{
 
   public Screen(){
 		super("Game");
