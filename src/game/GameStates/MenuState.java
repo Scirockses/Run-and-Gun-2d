@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
+import game.Main;
 
 public class MenuState extends GameState {
 	private String[] Options = {"Play","Options","Quit"};
@@ -27,7 +28,7 @@ public class MenuState extends GameState {
 				g.setColor(Color.black);
 			}
 			g.setFont(new Font("Arial", Font.PLAIN,72));
-			g.drawString(Options[i], 1366 / 2 - 350, 100 + i * 150);
+			g.drawString(Options[i], Main.WIDTH / 2 - e,  i * 150 + Main.HEIGHT / 3);
 		}
 	}
 
