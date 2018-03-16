@@ -24,4 +24,23 @@ public class GameStateManager {
 	public void keyreleased(int k){
 		States.peek().keyreleased(k);
 	}
+	public void mouseClicked(int k){
+		States.peek().mouseClicked(k);
+	}
+	public void mousePressed(int k){
+		States.peek().mousePressed(k);
+	}
+	public void mouseReleased(int k){
+		States.peek().mouseReleased(k);
+	}
+	public void mouseDragged(int x,int y){
+		States.peek().mouseDragged(x, y);
+	}
+	public void mouseMoved(int x,int y){
+		States.peek().mouseMoved(x, y);
+	}
+	
+	
+	
+	
 }
