@@ -3,29 +3,29 @@ package game.GameStates;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.MouseEvent;
 
-import com.sun.glass.events.KeyEvent;
-
+import Graphics.Sprite;
 import game.Main;
 
 public class MenuState extends GameState {
 	private String[] Options = {"Play","Options","Quit"};
 	private int CurrentSelection = 50;
 	private int mx,my;
+	private Image bg = Sprite.Sprite("\\Sprites\\Backgrounds\\MainMenu.png");
 	int k;
 	public MenuState(GameStateManager gsm) {
 		super(gsm);
 	}
 
 	public void init() {}
-	public void tick() {
-			System.out.print(my);
-	}
+	public void tick() {}
 
 	
 	public void draw(Graphics g) {
 		g.setColor(Color.white);
+		g.drawImage(bg, 0, 0, null);
 		for(int i = 0; i < Options.length; i++){
 		if(i == CurrentSelection){
 				g.setColor(Color.green);
